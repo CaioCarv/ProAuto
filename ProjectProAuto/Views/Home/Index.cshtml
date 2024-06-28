@@ -1,0 +1,36 @@
+﻿@model AssociadoModel
+
+@if (Model != null)
+{
+    <div class="text-center">
+        <h1 class="display-4">Bem Vindo @Model.Nome</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">CPF</th>
+                    <th scope="col">Placa</th>
+                    <th scope="col">Endereço</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.Nome</td>
+                    <td>@Model.CPF</td>
+                    <td>@Model.Placa</td>
+                    <td>@Model.Endereco</td>
+                    <td>@Model.Telefone</td>
+                    <td>
+                        <a role="button" class="btn btn-warning" asp-route-id="@Model.Id" asp-controller="Associados" asp-action="Editar">Editar Endereço</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <p>O associado não está logado ou não foi encontrado.</p>
+}

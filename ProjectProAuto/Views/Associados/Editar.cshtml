@@ -1,0 +1,23 @@
+﻿@model AssociadoModel
+@{
+    ViewData["Title"] = "Editar Endereço";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Editar Associado</h1>
+
+</div>
+
+<form asp-controller="Associados" asp-action="Alterar" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label for="endereco" class="form-label">Endereco</label>
+        <input type="text" asp-for="Endereco" class="form-control" placeholder="Coloque o endereço">
+        @Html.ValidationMessageFor(x => x.Endereco)
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100 mt-2 mb-2">Alterar</button>
+    <a class="btn btn-secondary btn-custom w-100 mt-2" asp-controller="Associados" asp-action="Index" role="button">Voltar</a>
+
+
+</form>
