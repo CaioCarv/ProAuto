@@ -34,4 +34,4 @@ Este projeto foi desenvolvido como parte do processo de implementação de uma a
    - Acesse a aplicação através do navegador.
    - Use o CPF `12345678900` e a placa `ABC1234` para autenticar-se como associado de teste.
    - Você será redirecionado para a página inicial onde poderá visualizar e atualizar o endereço.
-   - Para testar com novos associados, utilize o botão fornecido na interface para criar novos registros.
+   - Na aba "Associados", há um botão para adicionar novos contatos, permitindo testar a criação de novos registros.
